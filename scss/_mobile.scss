@@ -49,6 +49,17 @@
 	.menu .nav-link{
 		padding: 0.7rem 0;
 	}
+
+	// About Page
+	.about-info{
+		grid-template-areas: 
+		'bioimage'
+		'bio'
+		'job1'
+		'job2'
+		'job3';
+		grid-template-columns: 1fr;
+	}
 }
 
 // Smartphones

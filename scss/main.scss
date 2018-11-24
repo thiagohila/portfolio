@@ -1,9 +1,6 @@
 @import 'config';
 @import 'menu';
 
-@import 'mobile';
-
-
 
 * {
 	box-sizing: border-box
@@ -11,8 +8,8 @@
 
 body {
 	@include background;
+	color: set-text-color($primary-color);
 	background: $primary-color;
-	color: $text-primary;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -80,3 +77,55 @@ main{
 		}
 	}
 }
+
+// About Page
+#about{
+	padding: 2rem 4rem;
+}
+
+.about-info{
+	display: grid;
+	grid-gap: 30px;
+	grid-template-areas:
+	'bioimage bio bio'
+	'job1 job2 job3';
+	grid-template-columns: repeat(3, 1fr); 
+
+	.bio-img{
+		grid-area: bioimage;
+		margin: auto;
+		border-radius: 50%;
+		border: $text-secondary 3px solid;
+	}
+
+	.bio{
+		grid-area: bio;
+		font-size: 1.3rem;
+	}
+
+	.job{
+		background: lighten($primary-color, 5);
+		padding: 0.5rem;
+		border-bottom: $text-secondary 5px solid;
+	}
+
+	.job-1{
+		grid-area: job1;
+	}
+	.job-2{
+		grid-area: job2;
+	}
+	.job-3{
+		grid-area: job3;
+	}
+}
+
+#main-footer{
+	text-align: center;
+	padding: 1rem;
+	background: darken($primary-color, 10);
+	color: set-text-color($primary-color);
+}
+
+@import 'mobile';
+
