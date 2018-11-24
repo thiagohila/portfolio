@@ -2,13 +2,18 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Thiago Hila Portfolio",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "node server.js"
   },
   "author": "Thiago Hila",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.10.0"
-  }
+    "connect": "^3.6.6",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.10.0",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {}
 }
