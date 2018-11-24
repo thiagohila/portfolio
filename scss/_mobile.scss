@@ -5,7 +5,10 @@
 
 // Desktops & Laptops
 @include mediaLg {
-
+	// Works Page
+	.projects{
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 // Tablets & Small Laptops
@@ -60,6 +63,12 @@
 		'job3';
 		grid-template-columns: 1fr;
 	}
+
+	// Works Page
+	.projects{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 }
 
 // Smartphones
@@ -72,4 +81,10 @@
 			margin-top: 10vh !important;
 		}
 	}
+
+	// Works Page
+	.projects{
+		grid-template-columns: 1fr;
+	}
+
 }
