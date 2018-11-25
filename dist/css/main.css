@@ -154,7 +154,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -216,6 +216,26 @@ main {
     background: #eece1a;
     color: #000; }
 
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .contact-info div {
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    background: #515151;
+    cursor: pointer;
+    transition: all 0.3s ease-out; }
+    .contact-info div:hover {
+      background: #eece1a;
+      color: #000; }
+      .contact-info div:hover span {
+        color: #000; }
+
 .btn-dark {
   background: black;
   color: #fff; }
@@ -228,7 +248,8 @@ main {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
-  color: #fff; }
+  color: #fff;
+  height: 60px; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
