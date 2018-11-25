@@ -77,7 +77,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 600;
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease-out; }
@@ -188,6 +188,9 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+    .about-info .job h6 {
+      margin: 0;
+      padding: 0; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -197,8 +200,8 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -231,8 +234,7 @@ main {
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .contact-info div:hover {
-      background: #eece1a;
-      color: #000; }
+      background: #eece1a; }
       .contact-info div:hover span {
         color: #000; }
 
@@ -253,7 +255,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -284,13 +286,34 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 4rem 0 !important;
+    padding: 4rem 1rem !important;
     margin: 0 auto; }
+    main .lg-heading {
+      font-size: 4rem; }
+    main .sm-heading {
+      line-height: 1.4rem; }
     main#home h1 {
-      margin-top: 10vh !important; }
+      margin-top: 5vh !important; }
+  .menu-branding .portrait {
+    width: 100px !important;
+    height: 100px !important; }
+  .menu .nav-link {
+    padding: 0.3rem 0; }
+  .about-info .bio-img {
+    width: 100px;
+    height: 100px; }
+  .about-info .bio {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: justify; }
+  .about-info .job h3 {
+    font-size: 1.5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .contact-info div {
+    font-size: 1.2rem;
+    font-weight: 600; } }
