@@ -107,6 +107,11 @@ main{
 		background: lighten($primary-color, 5);
 		padding: 0.5rem;
 		border-bottom: $text-secondary 5px solid;
+
+		& h6{
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	.job-1{
@@ -123,8 +128,8 @@ main{
 // Work Page
 .projects{
 	display: grid;
-	grid-gap: 0.7rem;
-	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	grid-template-columns: repeat(4, 1fr);
 
 
 	img{
@@ -172,7 +177,7 @@ main{
 		&:hover{
 			
 			background: $text-secondary;
-			color: set-text-color($text-secondary);
+			// color: set-text-color($text-secondary);
 			span {
 				color: set-text-color($text-secondary);
 			}
